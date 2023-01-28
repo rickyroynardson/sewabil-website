@@ -1,7 +1,7 @@
 import AdminLayout from "@/Layouts/AdminLayout";
 import { Head } from "@inertiajs/react";
 
-export default function Dashboard() {
+export default function Dashboard({ auth }) {
     return (
         <>
             <Head>
@@ -11,7 +11,7 @@ export default function Dashboard() {
                     content="admin dashboard page description"
                 />
             </Head>
-            <AdminLayout>
+            <AdminLayout auth={auth}>
                 <p>dashbord</p>
             </AdminLayout>
         </>

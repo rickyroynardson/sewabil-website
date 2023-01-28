@@ -1,6 +1,6 @@
 import { Menu } from "@headlessui/react";
 import { Link } from "@inertiajs/react";
-import { FiChevronDown } from "react-icons/fi";
+import { FiChevronDown, FiUser } from "react-icons/fi";
 import ApplicationLogo from "./ApplicationLogo";
 import Container from "./Container";
 
@@ -14,6 +14,7 @@ export default function Header({ auth }) {
                 {auth.user ? (
                     <Menu as="div" className="relative">
                         <Menu.Button className="inline-flex items-center gap-1">
+                            <FiUser />
                             {auth.user.name}
                             <FiChevronDown />
                         </Menu.Button>
